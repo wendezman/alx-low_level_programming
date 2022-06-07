@@ -1,21 +1,21 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
- * main-Entry point
+ *print_alphabet - prints the alphabet
  *
  * Return: Always 0 (Success/Correct)
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char alphabet;
 
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		putchar(alphabet);
+		_putchar(alphabet);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
