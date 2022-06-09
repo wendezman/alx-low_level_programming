@@ -2,7 +2,7 @@
 
 /**
  * _isupper - checks for uppercase character
- * @letter: the character to be tracked
+ * @c: the character to be checked
  * Return: 1 if c is uppercase, 0 otherwise
  */
 
