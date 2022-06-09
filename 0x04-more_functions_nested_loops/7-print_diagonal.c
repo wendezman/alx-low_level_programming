@@ -25,7 +25,7 @@ void print_diagonal(int n)
 				else if (m < l)
 				{
 					_putchar(32);
-				}	
+				}
 			}
 			_putchar(10);
 		}
