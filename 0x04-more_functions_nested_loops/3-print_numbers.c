@@ -7,9 +7,9 @@ void print_numbers(void)
 {
 	int c;
 	
-	for (c = 14; c < 24; c++)
+	for (c = 0; c < 9; c++)
 	{
 	_putchar(c);
 	}
-	_putchar(10);
+	_putchar(\n);
 }
