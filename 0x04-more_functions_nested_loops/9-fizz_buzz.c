@@ -8,25 +8,29 @@
 
 int main(void)
 {
-	int c;
+	int m;
 	
-	for (c = 1; c <= 100; c++)
+	for (m = 1; m <= 100; m++)
 	{
-		if ((c % 3 == 0) && (c % 5 == 0))
+		if ((m % 3 == 0) && (m % 5 == 0))
 		{
 			printf(" FizzBuzz");
 		}
-		else if ((c % 3 == 0) && (c % 5 != 0))
+		else if ((m % 3 == 0) && (m % 5 != 0))
 		{
 			printf(" Fizz");
 		}
-		else if ((c % 5 == 0) && (c % 3 != 0))
+		else if ((m % 5 == 0) && (m % 3 != 0))
 		{
 			printf(" Buzz");
 		}
+		else if (m == 1)
+		{
+			printf("%f", m);
+		}
 		else
 		{
-			printf(" %f", c);
+			printf(" %f", m);
 		}
 	}
 	printf("\n");
