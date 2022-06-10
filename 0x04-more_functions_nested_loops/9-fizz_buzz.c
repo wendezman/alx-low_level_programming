@@ -10,10 +10,8 @@
 int main(void)
 {
 	int c;
-
-	c = 1;
-
-	while (c < 101)
+	
+	for (c = 1; c < 101; c++)
 	{
 		if (c == 1)
 		{
@@ -35,8 +33,6 @@ int main(void)
 		{
 			printf(" %f", c);
 		}
-
-		c++;
 	}
 	printf("\n");
 
