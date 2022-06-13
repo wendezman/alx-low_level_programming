@@ -10,8 +10,22 @@
 
 int _atoi(char *s)
 {
-	int integer;
+	unsigned int integer;
+	int sign = 1, m = 0;
 
-	integer = atoi(s);
+	while (s[m] <= '9' && (s[m] >= '0' && s[m] != '\0'))
+	{
+		integer = (integer * 10) + (s[m] - '0');
+		m++;
+	}
+	while (!(s[m] <= '9' && s[m] >= '0') && s[m] != '\0')
+	{
+		if (s[m] == '-')
+		{
+			sign *= -1;
+		}
+		m++;
+	}
+	integer *=sign;
 	return (integer);
 }
