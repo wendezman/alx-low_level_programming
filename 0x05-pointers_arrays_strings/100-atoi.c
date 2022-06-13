@@ -13,17 +13,17 @@ int _atoi(char *s)
 	unsigned int integer = 0;
 	int sign = 1, m = 0;
 
-	while (s[m] <= '9' && (s[m] >= '0' && s[m] != '\0'))
-	{
-		integer = (integer * 10) + (s[m] - '0');
-		m++;
-	}
 	while (!(s[m] <= '9' && s[m] >= '0') && s[m] != '\0')
 	{
 		if (s[m] == '-')
 			sign *= -1;
 		m++;
 	}
-	integer *=sign;
+	while (s[m] <= '9' && (s[m] >= '0' && s[m] != '\0'))
+	{
+		integer = (integer * 10) + (s[m] - '0');
+		m++;
+	}
+	integer *= sign;
 	return (integer);
 }
