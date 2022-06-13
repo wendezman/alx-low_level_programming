@@ -21,9 +21,7 @@ int _atoi(char *s)
 	while (!(s[m] <= '9' && s[m] >= '0') && s[m] != '\0')
 	{
 		if (s[m] == '-')
-		{
 			sign *= -1;
-		}
 		m++;
 	}
 	integer *=sign;
