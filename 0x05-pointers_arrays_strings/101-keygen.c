@@ -4,18 +4,18 @@
 #include <math.h>
 
 /**
- * main - generates random valid passwords for 101-crackme.
+ * main - print password.
  *
  * Return: 0.
  */
 
 int main(void)
 {
-	int ascii = 2772, i = 0, j, random = 0;
+	int ascii = 2772, i = 0, j, random;
 	char password[100];
 	time_t t;
-
 	srand((int) time(&t));
+
 	while (ascii > 126)
 	{
 		random = rand() % 126;
@@ -29,6 +29,7 @@ int main(void)
 	{
 		i--;
 	}
+
 	for (j = 0; j <= i; j++)
 	{
 		printf("%c", password[j]);
