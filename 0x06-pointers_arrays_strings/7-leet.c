@@ -11,9 +11,9 @@ char *leet(char *s)
 	int m;
 	int n = 0;
 
-	char c1337[] = {'4', '3', '0', '7', '1'};
-	char Upper[] = {'A', 'E', 'O', 'T', 'L'};
-	char Lower[] = {'a', 'e', 'o', 't', 'l'};
+	char c1337[] = {'4', '3', '1', '0', '7'};
+	char Upper[] = {'A', 'E', 'L', 'O', 'T'};
+	char Lower[] = {'a', 'e', 'l', 'o', 't'};
 
 	for (m = 0; s[m] != '\0'; m++)
 	{
