@@ -8,8 +8,7 @@
 
 char *leet(char *str)
 {
-	int m = 0;
-	int n = 0;
+	int m = 0; n = 0;
 
 	char c1337[] = {'4', '3', '1', '0', '7'};
 	char Upper[] = {'A', 'E', 'L', 'O', 'T'};
@@ -22,6 +21,8 @@ char *leet(char *str)
 			if ((str[m] == Upper[n]) || (str[m] == Lower[n]))
 				str[m] = c1337[n];
 		}
+		m++;
 	}
+
 	return (str);
 }
