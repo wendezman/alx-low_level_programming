@@ -2,11 +2,11 @@
 
 /**
  * leet - encodes a string into 1337
- * @str: the string to be encoded
+ * @s: the string to be encoded
  * Return: the string after being encoded
  */
 
-char *leet(char *str)
+char *leet(char *s)
 {
 	int m = 0;
 	int n = 0;
@@ -15,17 +15,17 @@ char *leet(char *str)
 	char Upper[] = {'A', 'E', 'O', 'T', 'L'};
 	char Lower[] = {'a', 'e', 'o', 't', 'l'};
 	
-	while (str[m] != '\0')
+	while (s[m] != '\0')
 	{
 		while (n < 5)
 		{
-			if (str[m] == Upper[n] || str[m] == Lower[n])
+			if (s[m] == Upper[n] || s[m] == Lower[n])
 				{
-					str[m] = c1337[n]
+					s[m] = c1337[n]
 				}
 			n++;
 		}
 		m++;
 	}
-	return (str);
+	return (s);
 }
