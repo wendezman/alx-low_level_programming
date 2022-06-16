@@ -8,19 +8,19 @@
 
 char *rot13(char *str)
 {
-	int m = 0, n = 0;
-	char r13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	char Letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+int m = 0, n = 0;
+char r13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+char Letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-		while (str[m] != '\0')
+	while (str[m] != '\0')
+	{
+		for (n = 0; n < 52; n++)
 		{
-			for (n = 0; n < 52; n++)
-			{
-				if ((str[m] == Letters[n]) && (Letters[n] != '\0'))
-					str[m] = r13[n];
-			}
-			m++;
+			if ((str[m] == Letters[n]) && (Letters[n] != '\0'))
+				str[m] = r13[n];
 		}
+		m++;
+	}
 
 	return (str);
 }
