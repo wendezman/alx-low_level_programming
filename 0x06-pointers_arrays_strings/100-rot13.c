@@ -16,7 +16,7 @@ char *rot13(char *str)
 		{
 			for (n = 0; n < 52; n++)
 			{
-				if (str[m] == Letters[n] && Letters[n] != '\0')
+				if ((str[m] == Letters[n]) && (Letters[n] != '\0'))
 					str[m] = r13[n];
 			}
 			m++;
