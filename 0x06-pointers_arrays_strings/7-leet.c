@@ -21,7 +21,7 @@ char *leet(char *s)
 		{
 			if (s[m] == Upper[n] || s[m] == Lower[n])
 				{
-					s[m] = c1337[n]
+					s[m] = c1337[n];
 				}
 			n++;
 		}
