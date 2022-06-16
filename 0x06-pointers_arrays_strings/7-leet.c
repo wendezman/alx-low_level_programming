@@ -8,24 +8,23 @@
 
 char *leet(char *s)
 {
-	int m = 0;
+	int m;
 	int n = 0;
 
 	char c1337[] = {'4', '3', '0', '7', '1'};
 	char Upper[] = {'A', 'E', 'O', 'T', 'L'};
 	char Lower[] = {'a', 'e', 'o', 't', 'l'};
-	
-	while (s[m] != '\0')
+
+	for (m = 0; s[m] != '\0'; m++)
 	{
 		while (n < 5)
 		{
 			if (s[m] == Upper[n] || s[m] == Lower[n])
-				{
-					s[m] = c1337[n];
-				}
+			{
+				s[m] = c1337[n];
+			}
 			n++;
 		}
-		m++;
 	}
 	return (s);
 }
