@@ -7,7 +7,7 @@
  * Return: 0
  */
 
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i;
 	int j;
@@ -16,7 +16,7 @@ void reverse_array(int *a, int n);
 	j = n - 1;
 	i = 0;
 
-	while (i < n / 2)
+	while (i < n)
 	{
 		ori = a[i];
 		a[i] = a[j];
