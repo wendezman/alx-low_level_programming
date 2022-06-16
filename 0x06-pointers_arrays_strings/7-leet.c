@@ -15,13 +15,12 @@ char *leet(char *str)
 	char Upper[] = {'A', 'E', 'L', 'O', 'T'};
 	char Lower[] = {'a', 'e', 'l', 'o', 't'};
 
-	for (m = 0; str[m] != '\0'; m++)
+	while (str[m] != '\0')
 	{
-		while (n < 5)
+		for (n = 0; n < 5; n++)
 		{
 			if ((str[m] == Upper[n]) || (str[m] == Lower[n]))
 				str[m] = c1337[n];
-			n++;
 		}
 	}
 	return (str);
