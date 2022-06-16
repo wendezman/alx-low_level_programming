@@ -14,9 +14,9 @@ char Letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	while (str[m] != '\0')
 	{
-		for (n = 0; n < 52; n++)
+		for (n = 0; Letters[n] != '\0'; n++)
 		{
-			if ((str[m] == Letters[n]) && (Letters[n] != '\0'))
+			if (str[m] == Letters[n])
 				str[m] = r13[n];
 		}
 		m++;
