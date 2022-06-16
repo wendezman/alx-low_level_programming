@@ -8,7 +8,7 @@
 
 char *leet(char *s)
 {
-	int m;
+	int m = 0;
 	int n = 0;
 
 	char c1337[] = {'4', '3', '1', '0', '7'};
