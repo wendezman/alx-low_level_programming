@@ -10,14 +10,15 @@
 char *string_toupper(char *str)
 {
 	int i = 0;
-	char m;
 
-	while (str[i])
+	while (str[i] != '\0')
 	{
-		m = str[i];
-		toupper(m);
+		if(str[i] < 123 && str[i] > 96)
+		{
+			str[i] = str[i] - 32;
+		}
 		i++;
 	}
 
-	return (m);
+	return (str);
 }
