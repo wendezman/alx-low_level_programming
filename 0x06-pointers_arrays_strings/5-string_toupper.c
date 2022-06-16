@@ -6,9 +6,9 @@
  * Return: the string in uppercase
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *r)
 {
-	toupper(str);
+	toupper(r);
 
-	return (str);
+	return (r);
 }
