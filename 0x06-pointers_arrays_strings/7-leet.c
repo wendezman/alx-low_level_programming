@@ -20,7 +20,7 @@ char *leet(char *str)
 		{
 			if (str[m] == Upper[n] || str[m] == Lower[n])
 			{
-				str[m] = c1337[m]
+				str[m] = c1337[n]
 			}
 		}
 	}
