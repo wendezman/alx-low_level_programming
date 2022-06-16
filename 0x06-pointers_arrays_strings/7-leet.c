@@ -15,7 +15,7 @@ char *leet(char *str)
 	char Upper[] = {'A', 'E', 'O', 'T', 'L'};
 	char Lower[] = {'a', 'e', 'o', 't', 'l'};
 	
-	for (m = 0; str[m] != '\0'; m++)
+	while (str[m] != '\0')
 	{
 		while (n < 5)
 		{
@@ -25,6 +25,7 @@ char *leet(char *str)
 				}
 			n++;
 		}
+		m++;
 	}
 	return (str);
 }
