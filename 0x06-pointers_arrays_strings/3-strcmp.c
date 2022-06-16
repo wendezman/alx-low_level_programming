@@ -5,7 +5,7 @@
 * _strcmp - compares two strings
 * @s1: the first string
 * @s2: the second string
-* Return: 0 if s1 == s2, > 0 if s1 > s2, < 0 if s1 < s2
+* Return: integer comparison
 */
 
 int _strcmp(char *s1, char *s2);
@@ -15,17 +15,9 @@ int _strcmp(char *s1, char *s2);
 	int m;
 
 	for (j = 0; j == i; j++)
-		if (s1[i] == s2[j])
+		if (s1[i] != '\0' && s2 [j] != '\0')
 		{
-			m = _putchar(48);
-		}
-		elseif (s1[i] > s2[j])
-		{
-			m = _putchar(62, 32, 48);
-		}
-		else
-		{
-			m = _putchar(60, 32, 48);
+			m = s1[i] - s2[j];
 		}
 	return (m);
 }
