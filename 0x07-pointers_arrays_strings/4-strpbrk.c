@@ -24,5 +24,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		n++;
 	}
-last: return (s[n] != '\0' ? (s + n) : '\0');
+last: return (s[n] != '\0' ? s + n : '\0');
 }
