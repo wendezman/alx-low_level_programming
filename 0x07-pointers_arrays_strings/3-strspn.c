@@ -23,9 +23,15 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[n] == accept[m])
 			{
 				prefix_length++;
-				m = test_length;
+			}
+			else
+			{
+				if (m == test_length - 1)
+				{
+					goto last;
+				}
 			}
 		}
 	}
-	return (prefix_length);
+last: return (prefix_length);
 }
