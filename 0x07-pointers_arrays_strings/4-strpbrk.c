@@ -12,17 +12,15 @@ char *_strpbrk(char *s, char *accept)
 	unsigned int n = 0;
 	unsigned int m = 0;
 
-	while (s[n] != '\0')
+	for (n = 0; s[n] != '\0'; n++)
 	{
-		while (accept[m] != '\0')
+		for (m = 0; accept[m] != '\0'; m++)
 		{
 			if (s[n] == accept[m])
 			{
 				goto last;
 			}
-			m++;
 		}
-		n++;
 	}
 last: return (s[n] != '\0' ? s + n : '\0');
 }
