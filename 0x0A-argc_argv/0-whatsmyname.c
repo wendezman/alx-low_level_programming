@@ -1,15 +1,14 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * _whats_myname - prints its name
+ * main - entry point
  * @argc: Counts the number of commandline arguments
- * @argv: Pointer of array of commandline arguments
- * Return: Always 0 (Success)
+ * @argv: Pointer of array of pointers of commandline arguments
+ * Return: Always 0
  */
 
-int _whats_myname(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	if (argc > 0)
 	{
