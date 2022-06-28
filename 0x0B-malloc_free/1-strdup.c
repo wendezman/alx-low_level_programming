@@ -18,11 +18,8 @@ char *_strdup(char *str)
 	}
 
 	for (n = 0; str[n]; n++)
-	{
-		;
-		n++;
-	}
-
+	;
+	n++;
 	string = malloc(sizeof(char) * n);
 
 	if (string == NULL)
@@ -33,6 +30,6 @@ char *_strdup(char *str)
 	{
 		string[n] = str[n];
 	}
-	string[n + 1] = '\0';
+	string[n] = '\0';
 									return (string);
 }
